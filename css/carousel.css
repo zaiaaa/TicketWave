@@ -1,0 +1,60 @@
+.carousel-container {
+    position: relative;
+    width: 705px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 1rem;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    min-width: 100%;
+    flex-shrink: 0;
+    position: relative;
+  }
+  
+  img {
+    max-width: 700px;
+    height: auto;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 28px;
+  }
+  
+  .prev-button {
+    left: 0;
+  }
+  
+  .next-button {
+    right: 0;
+  }
+  
+  .description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo da descrição com transparência */
+    color: #fff;
+    padding: 10px;
+    opacity: 0; /* Inicialmente, a descrição é invisível */
+    transition: opacity 0.3s ease-in-out; /* Adiciona uma transição suave */
+    width: 100%;
+  }
+  
+  .slide:hover .description {
+    opacity: 1; /* Torna a descrição visível no hover */
+  }

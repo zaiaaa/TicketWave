@@ -1,0 +1,121 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #131819;
+    color: #9f22d4;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #303030;
+}
+.navbar h2 a{
+    text-decoration: none;
+    color: #9f22d4;
+    font-size: 36px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #9f22d4;
+    font-size: 22px;
+    transition: .3s ease;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 20px;
+}
+.item{
+    margin-right: 3rem;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    position: relative;
+}
+
+form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search input{
+    padding: .4rem;
+    border-radius: 14px;
+    border: 1px solid #9f22d4;
+    outline: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search button{
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #9f22d4;
+    color: #fff;
+    border: 1px solid #fff;
+    position: absolute;
+    right: 0;
+}
+
+.icon-search{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-buttons{
+    width: 50rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.buttons{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.buttons button{
+    width: 40%;
+    padding: .7rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
+    transition: transform .2s ease;
+}
+
+.cad{
+    background-color: #9f22d4;
+    color: #fff;
+    border:1px solid #fff;
+}
+
+.buttons button:hover{
+    transform: scale(1.04);
+}
+
+nav li a:hover{
+    color: #c482e0;
+}
+
+.ent{
+    background-color: #fff;
+    color: #9f22d4;
+    border:1px solid #9f22d4;
+}
+

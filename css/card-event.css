@@ -1,0 +1,60 @@
+.cards{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: space-around;
+}
+.card-event img{
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: .5rem;
+    padding-top: .5rem;
+}
+.card-event{
+    width: 275px;
+    background-color: #222c2e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem;
+    border-radius: 10px;
+    color: #c53fff;
+    margin-bottom: 1rem;
+    transition: transform .3s ease;
+}
+
+.card-event:hover{
+    transform: scale(1.04);
+}
+
+.header-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+}
+
+.header-card h2 a{
+    color: #c53fff;
+}
+
+.vertical-line {
+    border: none; /* Remove a aparência padrão da linha horizontal */
+    border-left: 1px solid #c53fff; /* Define a linha vertical com 1px de largura e cor preta (#000) */
+    height: 40px; /* Ajuste a altura da linha conforme necessário */
+    margin: 0 10px; /* Adicione margens para espaçamento entre a linha e os textos */
+}
+
+.card-body{
+    text-align: center;
+}
+
+.title{
+    margin-top: .5rem;
+    color: #9f22d4;
+    text-align: center;
+}
