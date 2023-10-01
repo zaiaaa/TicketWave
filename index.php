@@ -7,7 +7,7 @@
     $queryEvento = mysqli_query($conn, "SELECT * FROM concerto");
     $dadosEv = mysqli_fetch_array($queryEvento);
 
-    $queryEventoCard = mysqli_query($conn, "SELECT * FROM concerto");
+    $queryEventoCard = mysqli_query($conn, "SELECT * FROM concerto ORDER BY data_show");
 
 ?>
 <!DOCTYPE html>
@@ -95,7 +95,7 @@
                         ?>
                         <h2><?php echo $dia?>/<?php echo $mes?></h2>
                         <hr class="vertical-line">
-                        <h2><a href="#"><?php echo $dadosEvento['nome']?></a></h2>
+                        <h2><a href="inc/view.php?id_evento=<?php echo base64_encode($id)?>"><?php echo $dadosEvento['nome']?></a></h2>
                     </div>
                     
                     <br>
