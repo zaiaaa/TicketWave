@@ -1,4 +1,7 @@
 <?php
+
+    mysqli_report(MYSQLI_REPORT_STRICT);
+
     define('db_host', 'localhost');
     define('username', 'root');
     define('password', '');

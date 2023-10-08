@@ -1,0 +1,30 @@
+.evento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.evento-header{
+    padding-bottom: 15px;
+}
+
+.evento-header h1{
+    color: #9f22d4;
+    font-size: 50px;
+}
+
+.evento-header p{
+    color: #bf4bf1;
+    font-weight: 700;
+    text-align: center;
+}
+
+.evento img{
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+.evento-conteudo{
+    background-color: #9f22d4;
+}

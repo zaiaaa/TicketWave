@@ -6,9 +6,9 @@
     include('./database.php');
     include('./config.php');
 
-    $queryImg = mysqli_query($conn, "SELECT * FROM imagens");
+    $queryImg = mysqli_query($conn, "SELECT * FROM imagens where id_concerto = $id_evento");
     
-    $queryEvento = mysqli_query($conn, "SELECT * FROM concerto");
+    $queryEvento = mysqli_query($conn, "SELECT * FROM concerto where id=$id_evento");
     $dadosEv = mysqli_fetch_array($queryEvento);
 
     $queryEventoCard = mysqli_query($conn, "SELECT * FROM concerto");
@@ -22,43 +22,36 @@
     <!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/carousel.css">
-    <link rel="stylesheet" href="../css/card-event.css">
+    <link rel="stylesheet" href="../css/view.css">
     <title>TicketWave</title>
 </head>
 <body>
     <!--///////////////NAVBAR////////////////////////-->
-    <div class="navbar">
-        <div class="icon-search">
-            <h2><a href="../index.php">TicketWave</a></h2>
-            
-            <div class="search">
-                <form action="#">
-                    <input type="text" class="corner-mask">
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </div>
-        </div>
-
-        <div class="nav-buttons">
-            <nav>
-                <ul>
-                    <li class="item"><a class="active" href="">Home</a></li>
-                    <li class="item"><a href="">Eventos próximos</a></li>
-                    <li><a href="">Sobre</a></li>
-                </ul>
-            </nav>
-            <div class="buttons">
-                <button class="cad">Cadastrar</button>
-                <button class="ent">Entrar</button>
-            </div>
-        </div>
-    </div>
+    <?php include('header.php')?>
     <!--///////////////NAVBAR////////////////////////-->
         
     <!--///////////////CONTENT////////////////////-->
     <main>
-        a
+        
+        <div class="evento">
+            <div class="evento-header">
+                <h1><?php echo $dadosEv['nome']?></h1>
+                <p><?php echo $dadosEv['cantores']?></p>
+            </div>
+            <?php while($dadosImg = mysqli_fetch_array($queryImg)) { 
+            echo '<img src="'. ARQUIVOS_PATH . $dadosImg['caminho'] . '" alt="Imagem 1">';
+            }?>   
+            <div class="evento-conteudo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum molestiae recusandae at voluptatum non aliquid vitae ipsum dolor perspiciatis totam eligendi, optio vel qui nostrum eveniet, impedit beatae soluta alias?</p>    
+
+                <p>Lote 1</p>
+                <p>124,00 R$</p>
+                <button>Comprar</button>
+                <p>Localização</p>
+            </div>
+        </div>
+        
+        
     </main>
 
 
