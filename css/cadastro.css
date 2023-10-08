@@ -1,0 +1,133 @@
+body{
+    overflow-y: hidden;
+}
+
+.cadastro{
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid #000;
+    width: 100%;
+    margin: 5rem;
+    border-radius: 10px;
+    background-color: #1e2425;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cadastro h1{
+    color: #9f22d4;
+    text-align: center;
+}
+
+.cadastro-conteudo {
+    width: 50%;
+}
+
+.cadastro-conteudo form{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-ct input{
+    width: 280px;
+    padding: .4rem .7rem;
+    border-radius: 5px;
+    border: 2px solid #9f22d4;
+    outline: none;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+
+.input-ct label{
+    color: #9f22d4;
+    font-weight: 600;
+}
+
+.botoes{
+    margin-top: .5rem;
+}
+
+.botoes button{
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.botoes button:hover{
+    opacity: .8;
+}
+
+.enviar{
+    background-color: #006400;
+    color: #fff;
+}
+
+.resetar{
+    background-color: #ff9933;
+    color: #000;
+}
+
+.msg-succ{
+    color: rgb(6, 61, 6);
+}
+
+.msg-err{
+    color: red;
+}
+
+@keyframes subida {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px); /* Subida de 50 pixels */
+    }
+}
+
+@keyframes desaparecer {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none;
+    }
+}
+
+.message-succ{
+    position: absolute;
+    bottom: -20px;
+    transition: opacity 0.5s ease-in-out;
+    animation: subida 2s ease forwards, desaparecer 0.5s ease forwards 3.5s;
+    opacity: 1;
+    background-color: #bdebbd;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.message-err{
+    position: absolute;
+    bottom: -20px;
+    transition: opacity 0.5s ease-in-out;
+    animation: subida 2s ease forwards, desaparecer 0.5s ease forwards 3.5s;
+    opacity: 1;
+    background-color: #e0a0a0;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+

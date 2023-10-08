@@ -6,7 +6,7 @@
     width: 100%;
 }
 .evento-header{
-    padding-bottom: 15px;
+    padding-bottom: .8rem;
 }
 
 .evento-header h1{
@@ -26,5 +26,62 @@
 }
 
 .evento-conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: .8rem .7rem;
+}
+
+.evento-conteudo .desc{
+    color: #9f22d4;
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: .5rem;
+}
+
+.lote-preco{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.lote{
+    font-size: 22px;
+    color: #bf4bf1;
+}
+.preco{
+    color: #34a223;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.evento button{
+    width: 35%;
+    padding: 1rem 0;
     background-color: #9f22d4;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.evento button:hover{
+    background-color: #bd3bf5;
+}
+
+.evento-footer{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.evento-footer p{
+    color: #9f22d4;
+    font-weight: 600;
 }

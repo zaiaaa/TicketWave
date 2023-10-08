@@ -14,13 +14,13 @@
             <nav>
                 <ul>
                     <li class="item"><a class="active" href="">Home</a></li>
-                    <li class="item"><a href="">Eventos próximos</a></li>
+                    <li class="item"><a href="">Ingressos comprados</a></li>
                     <li><a href="">Sobre</a></li>
                 </ul>
             </nav>
             <div class="buttons">
-                <button class="cad">Cadastrar</button>
-                <button class="ent">Entrar</button>
+            <a href="<?php echo BASEURL?>customers/cadastro.php"><button class="cad">Cadastrar</button></a>
+            <a href="<?php echo BASEURL?>customers/entrar.php"><button class="ent">Entrar</button></a>
             </div>
         </div>
     </div>

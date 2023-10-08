@@ -70,7 +70,7 @@
                         ?>
                         <h2><?php echo $dia?>/<?php echo $mes?></h2>
                         <hr class="vertical-line">
-                        <h2><a href="inc/view.php?id_evento=<?php echo base64_encode($id)?>"><?php echo $dadosEvento['nome']?></a></h2>
+                        <h2><a href="view.php?id_evento=<?php echo base64_encode($id)?>"><?php echo $dadosEvento['nome']?></a></h2>
                     </div>
                     
                     <br>
