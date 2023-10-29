@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include('../inc/database.php');
     include('../inc/config.php');
 ?>
@@ -40,6 +39,15 @@
                     </div>
                 </form>
             </div>
+            <?php if(isset($_SESSION['error_login'])):?>
+                <div class="message-err">
+                    <?php
+                        echo $_SESSION['error_login'];
+                        unset($_SESSION['error_login']);
+                    ?>
+                </div>
+            <?php endif?>
+            
         </div>
     </main>
 

@@ -1,0 +1,101 @@
+.sideBarUser{
+    width: 30%;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    background-color: #131819;
+    opacity: .9;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+
+
+    transition: left .5s;
+    animation: rolarLado .5s ease;
+} 
+
+.closed{
+    left: 0;
+    transition: left .5s;
+    animation: rolarOutroLado .5s ease;
+    display: none;
+}
+
+@keyframes rolarOutroLado {
+    from{
+        left: 0;
+    }
+    to{
+        left: -30%;
+        display: none;
+    }
+}
+
+
+@keyframes rolarLado {
+    from{
+        left: -30%;
+    }
+    to{
+        left: 0;
+    }
+}
+
+
+#user{
+    color: #9f22d4;
+    transition: .2s;
+    text-decoration: underline;
+    cursor: pointer;
+}
+#user:hover{
+    color: #c482e0;
+}
+
+.sideBarUser ul{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    overflow-x: hidden;
+    opacity: 1;
+}
+.sideBarUser .item{
+    opacity: 1;
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: .5rem;
+    padding: .5rem;
+    color: #9f22d4;
+    border: 1px solid #000000;
+    transition: .3s;
+}
+
+.sideBarUser .item:hover{
+    background-color: #000000;
+}
+
+.btnFechar{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    opacity: 1;
+}
+
+.btnFechar .fa-x{
+    font-size: 25px;
+    color: #9f22d4;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.header-sideBar{
+    color: #9f22d4;
+    opacity: 1;
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 24px;
+}

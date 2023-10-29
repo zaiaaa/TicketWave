@@ -10,22 +10,7 @@
     $queryEventoCard = mysqli_query($conn, "SELECT * FROM concerto ORDER BY data_show");
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/carousel.css">
-    <link rel="stylesheet" href="css/card-event.css">
-    <title>TicketWave</title>
-</head>
-<body>
-    <!--///////////////NAVBAR////////////////////////-->
     <?php include('inc/header.php')?>
-    <!--///////////////NAVBAR////////////////////////-->
         
     <!--///////////////CONTENT////////////////////-->
     <main>
@@ -93,5 +78,6 @@
     <script src="js/awesome/all.min.js"></script>
     <script src="js/awesome/fontawesome.min.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/user.js"></script>
 </body>
 </html>
